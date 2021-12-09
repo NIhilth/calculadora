@@ -6,6 +6,7 @@ import { MainComponent } from './main/main.component';
 import { CalculadoraComponent } from './main/calculadora/calculadora.component';
 import { VisorComponent } from './main/calculadora/visor/visor.component';
 import { BotaoComponent } from './main/calculadora/botao/botao.component';
+import { LinhaComponent } from './main/calculadora/linha/linha.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { BotaoComponent } from './main/calculadora/botao/botao.component';
     MainComponent,
     CalculadoraComponent,
     VisorComponent,
-    BotaoComponent
+    BotaoComponent,
+    LinhaComponent
   ],
   imports: [
     BrowserModule

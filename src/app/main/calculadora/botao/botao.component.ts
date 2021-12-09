@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class BotaoComponent implements OnInit {
 
   constructor() { }
+
+  @Input() numero
+  @Output() numeroConta = new EventEmitter<any>()
+
+  passarValor(){
+    this.numeroConta.emit(this.numero)
+  }
 
   ngOnInit() {
   }

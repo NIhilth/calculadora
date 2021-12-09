@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-calculadora',
@@ -9,7 +9,14 @@ export class CalculadoraComponent implements OnInit {
 
   constructor() { }
 
+  conta = ""
+  
   ngOnInit() {
+  }
+
+  passarNumeroVisor(digito){
+    this.conta += digito
+    console.log(this.conta)
   }
 
 }

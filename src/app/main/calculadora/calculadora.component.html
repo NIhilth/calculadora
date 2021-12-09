@@ -1,3 +1,30 @@
 <div>
   <h1>Calculadora</h1>
+  <app-visor ></app-visor>
+  <div id="botoes">
+      <app-linha>
+        <app-botao [numero] = "'7'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'8'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'9'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'+'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+      </app-linha>
+      <app-linha>
+        <app-botao [numero] = "'4'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'5'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'6'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'-'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+      </app-linha>
+      <app-linha>
+        <app-botao [numero] = "'1'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'2'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'3'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'x'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+      </app-linha>
+      <app-linha>
+        <app-botao [numero] = "'Dell'"></app-botao>
+        <app-botao [numero] = "'0'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+        <app-botao [numero] = "'='"></app-botao>
+        <app-botao [numero] = "'/'" (numeroConta) = "passarNumeroVisor($event)"></app-botao>
+      </app-linha>
+  </div>
 </div>
