@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-calculadora',
@@ -16,7 +16,14 @@ export class CalculadoraComponent implements OnInit {
 
   passarNumeroVisor(digito){
     this.conta += digito
-    console.log(this.conta)
+  }
+
+  resultado(){
+    this.conta = eval(this.conta)
+  }
+
+  restartar(){
+    this.conta = ""
   }
 
 }
