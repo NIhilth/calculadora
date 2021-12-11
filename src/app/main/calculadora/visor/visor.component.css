@@ -1,12 +1,12 @@
 #visor{
-    width: 300px;
+    width: 400px;
     height: 100px;
     background-color: gray;
     padding: 40px 15px ;
 }
 
 #numeros{
-    width: 260px;
+    width:360px;
     height:50px;
     background-color: white;
     padding: 20px;
