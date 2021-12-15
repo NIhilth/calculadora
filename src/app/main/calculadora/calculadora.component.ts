@@ -27,7 +27,7 @@ export class CalculadoraComponent implements OnInit {
       }
       this.conta += digito
     } else if (this.checagem != "+" && this.checagem != "*" && this.checagem != "/" && this.checagem != "-" && this.checagem != "(") {
-      this.conta += digito
+          this.conta += digito
     } 
     
     this.checagem = digito
